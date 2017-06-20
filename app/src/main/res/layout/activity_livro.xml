@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="pooa20171.iff.br.bibliotecaapp.activity.Livro">
+    tools:context="pooa20171.iff.br.bibliotecaapp.activity.LivroActivity">
 
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_livro"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

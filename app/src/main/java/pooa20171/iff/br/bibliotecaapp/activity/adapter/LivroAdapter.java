@@ -21,12 +21,14 @@ public class LivroAdapter extends RecyclerView.Adapter {
 
     private List<Livro> livros;
     private Context context;
+    private static ClickRecyclerViewListener clickRecyclerViewListener;
 
-    public LivroAdapter(List<Livro> livros, Context context) {
+    public LivroAdapter(List<Livro> livros, Context context,
+                        ClickRecyclerViewListener clickRecyclerViewListener) {
 
         this.livros = livros;
         this.context = context;
-        //this.clickRecyclerViewListener = clickRecyclerViewListener;
+        this.clickRecyclerViewListener = clickRecyclerViewListener;
     }
 
     @Override
@@ -67,7 +69,7 @@ public class LivroAdapter extends RecyclerView.Adapter {
             nomeLivro = (TextView) itemView.findViewById(R.id.tv_nome);
             nomeAutor = (TextView) itemView.findViewById(R.id.tv_autor);
             descricao = (TextView) itemView.findViewById(R.id.tv_descricao);
-            /*
+
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -75,7 +77,7 @@ public class LivroAdapter extends RecyclerView.Adapter {
 
                 }
             });
-            */
+
 
         }
     }

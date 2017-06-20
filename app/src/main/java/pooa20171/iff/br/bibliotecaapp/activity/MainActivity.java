@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void irParaLivro(View v){
-        Intent livro = new Intent(this,Livro.class);
+        Intent livro = new Intent(this,LivroActivity.class);
         startActivity(livro);
     }
 }

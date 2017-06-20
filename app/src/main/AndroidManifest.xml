@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.Livro"></activity>
+        <activity android:name=".activity.LivroActivity" />
+        <activity android:name=".activity.LivroDestaqueActivity"></activity>
     </application>
 
 </manifest>
